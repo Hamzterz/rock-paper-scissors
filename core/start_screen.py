@@ -2,6 +2,9 @@
 Rock, Paper, Scissors - Start Screen.
 
 """
+import sys
+sys.path.append('./core')
+from helpers.settings import Status
 
 
 def init():
@@ -19,17 +22,12 @@ def _int_get_valid_num_rounds():
     while bool_num_rounds_valid is False:
         str_num_rounds = input()
         try:
-            global INT_NUM_ROUNDS
-            INT_NUM_ROUNDS = int(str_num_rounds)
-            if (INT_NUM_ROUNDS % 2 == 1):
+            Status.INT_NUM_ROUNDS = int(str_num_rounds)
+            if (Status.INT_NUM_ROUNDS % 2 == 1):
                 bool_num_rounds_valid = True
             else:
                 print("The inputted value for number of rounds was not valid. Please input an odd number.")
         except:
             print("Inputted value for number of rounds was not valid. Check if input is a valid number.")
 
-    return INT_NUM_ROUNDS
-
-
-def int_get_num_rounds():
-    return INT_NUM_ROUNDS
+    return Status.INT_NUM_ROUNDS
