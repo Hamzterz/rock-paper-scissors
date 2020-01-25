@@ -7,3 +7,12 @@ This project was a basic rock, paper, scissors game in python language, run on t
 
 The codebase includes the main file which calls the two components of the python CLI game, the start screen and the core gameplay, which can be further improved upon to have things like a scoreboard etc.
 
+
+## Screenshots of CLI gameplay.
+![Alt text](/screenshots/ss_1_start.png?raw=true "Game Start.")
+
+![Alt text](/screenshots/ss_2_game.png?raw=true "Gameplay.")
+
+![Alt text](/screenshots/ss_3_game.png?raw=true "Gameplay.")
+
+![Alt text](/screenshots/ss_4_end.png?raw=true "Game Finished.")
